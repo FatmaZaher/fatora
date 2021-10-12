@@ -10,3 +10,15 @@ body {
 .footer .footer-content .footer-btn {
   text-align: left;
 }
+
+.navbar .learn-more .language-btn {
+  margin-right: 10px;
+}
+.header .intro .email-box input {
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  .header .intro .email-box input {
+    margin-left: 5px;
+  }
+}
