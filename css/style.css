@@ -1,18 +1,18 @@
 body {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   padding: 0;
   margin: 0;
   position: relative;
   width: 100%;
+  background-image: linear-gradient(to top, #eee, #f6f6f6);
 }
 :root {
-  --main-color: #31b28c;
-  --pargh--color: #84829a;
-  --submain-color: #0e6c51;
-  --text-color: #5b626a;
+  --main-color: #40989a;
+  --linear-color: #5bca9f;
+  --submain-color: #186567;
+  --p-color: #515f60;
   --white-color: #fff;
-  --linear-color: #49c387;
 }
 .container {
   width: 960px;
@@ -24,7 +24,7 @@ body {
   padding: 15px 30px;
   border-radius: 49px;
   transition: all 0.5s;
-  font-size: 15px;
+  font-size: 20px;
   color: var(--white-color);
   text-decoration: none;
   transition: all 0.2s;
@@ -32,20 +32,21 @@ body {
 .button:hover {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
-/* .button a {
-  color: var(--white-color);
-  text-decoration: none;
-  transition: all 0.2s;
-} */
 .start-btn {
   background: var(--submain-color);
 }
 .start-btn:hover{
   background: #188968;
 }
+@media (max-width: 767px) {
+  .button {
+    font-size: 13px !important;
+  }
+  
+}
 /******************/
 .navbar {
-  background-color: #35b58b;
+  background-color: #57c39f;
   width: 100%;
   padding: 15px 0;
   position: fixed;
@@ -81,8 +82,8 @@ body {
   background: transparent;
   font-weight: 600;
   padding: 15px;
+  font-size: 25px;
 }
-
 @media (max-width: 767px) {
   .navbar .logo img {
     width: 120px;
@@ -98,22 +99,22 @@ body {
 /*******************/
 .header {
   position: relative;
-  background: linear-gradient(var(--main-color), var(--linear-color));
+  background-image: linear-gradient(to top, var(--main-color), var(--linear-color));
   padding: 140px 0 50px;
-  height: 500px;
+  height: 600px;
   margin-bottom: 200px;
   color: var(--white-color);
   text-align: center;
 }
 .header .intro h1 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 60px;
 }
 .header .intro h1 span {
   font-weight: 600;
 }
 .header .intro p {
-  font-size: 20px;
+  font-size: 36px;
 }
 .header .intro .email-box {
   margin: 30px 0;
@@ -121,18 +122,19 @@ body {
   justify-content: center;
 }
 .header .intro .email-box input {
+  width: 345px;
   padding: 15px 30px;
   border-radius: 49px;
   outline: none;
   border: none;
-  font-size: 15px;
-  color: var(--text-color);
+  font-size: 20px;
+  color: var(--p-color);
   background-color: var(--white-color);
   margin-right: 20px;
 }
 .header-img {
   position: absolute;
-  top: 400px;
+  top: 530px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -148,6 +150,8 @@ body {
     font-size: 13px;
   }
   .header .intro .email-box input {
+    width: 220px;
+    font-size: 13px;
     margin-right: 0;
     margin-bottom: 20px;
     display: block;
@@ -157,6 +161,7 @@ body {
   }
   .header-img {
     width: 280px;
+    top: 399px;
   }
   .header-img img {
     width: 100%;
@@ -170,19 +175,29 @@ body {
   text-align: center;
   padding: 50px 0;
 }
-.features h1 {
+.features h1,
+.clients  h1 {
   margin-bottom: 40px;
+  font-size: 36px;
 }
 .features .feature-card {
   width: 30%;
   display: inline-block;
   text-align: left;
-  padding: 0 30px;
+  padding: 0 18px;
   box-sizing: border-box;
-  color: var(--text-color);
+  color: var(--p-color);
+}
+.features .feature-card h3{
+  font-size: 20px;
 }
 @media (max-width: 767px) {
-  .features h1 {
+  .features,
+.clients {
+  padding: 30px 0;
+}
+  .features h1,
+  .clients h1 {
     font-size: 22px;
   }
   .features .feature-card {
@@ -202,7 +217,8 @@ body {
 }
 @media (max-width: 767px) {
   .clients h1 {
-    font-size: 22px;
+    margin: 15px 0;
+
   }
   .clients .our-clients .client-img {
     padding: 0 5px;
@@ -210,8 +226,8 @@ body {
 }
 /************************/
 .footer {
-  padding: 5px 0;
-  background: linear-gradient(356deg, var(--linear-color), var(--main-color));
+  padding: 25px 0;
+  background-image: linear-gradient(to right, var(--main-color), var(--linear-color));
 }
 .footer .footer-content {
   display: flex;
@@ -227,16 +243,16 @@ body {
 }
 .footer .footer-content .footer-content {
   display: inline-block;
-  width: 69%;
+  width: 64%;
 }
 .footer .footer-content .footer-content p {
   margin: 0;
-  font-size: 17px;
+  font-size: 25px;
   font-weight: 500;
   color: var(--white-color);
 }
 .footer .footer-content .footer-btn {
-  width: 20%;
+  width: 25%;
   display: inline-block;
 }
 
