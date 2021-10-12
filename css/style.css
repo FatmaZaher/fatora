@@ -3,6 +3,8 @@ body {
   font-size: 15px;
   padding: 0;
   margin: 0;
+  position: relative;
+  width: 100%;
 }
 :root {
   --main-color: #31b28c;
@@ -49,15 +51,25 @@ body {
   padding: 15px 0;
   position: fixed;
   z-index: 1;
+  width: 100%;
+
 }
-.navbar .logo,
+.navbar .nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar .logo{
+  width: 40%;
+  display: inline-block;
+}
 .navbar .learn-more {
-  width: 49%;
+  width: 25%;
   display: inline-block;
 }
 .navbar .learn-more {
   float: right;
-  text-align: right;
+  text-align: left;
 }
 .navbar .logo img {
   width: 200px;
@@ -80,6 +92,15 @@ body {
 .navbar .learn-more .language-select option{
     color: var(--submain-color) !important;
 }
+.language-btn{
+  min-width: 50px;
+  background: transparent;
+  font-weight: 600;
+  height: 50px;
+  padding: 0;
+  margin-right: 20px;
+}
+
 @media (max-width: 767px) {
   .navbar .logo img {
     width: 120px;
@@ -87,6 +108,9 @@ body {
   .navbar .learn-more .learn-btn {
     min-width: 80px;
     padding: 5px 10px;
+  }
+  .navbar .learn-more {
+    width: 50%;
   }
 }
 /*******************/

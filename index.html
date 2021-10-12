@@ -8,6 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
   <title>Fatora</title>
   <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +19,15 @@
 <body>
   <div class="navbar">
     <div class="container">
-      <div class="logo">
-        <img src="images/Fatora-store-logo-inline.png" alt="logo" />
-      </div>
-      <div class="learn-more">
-        <div>
-          <button type="button" class="button learn-btn"><a href="#">Learn more</a></button>
-          <select class="language-select" id="">
-            <option selected>ع</option>
-            <option value="1">En</option>
-          </select>
+      <div class="nav">
+        <div class="logo">
+          <img src="images/Fatora-store-logo-inline.png" alt="logo" />
+        </div>
+        <div class="learn-more">
+          <div>
+            <button type="button" class="button learn-btn"><a href="#">Learn more</a></button>
+            <button type="button" class="button language-btn"><a href="#">ع</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -36,9 +36,9 @@
     <div class="container">
       <div class="header-content">
         <div class="intro">
-          <h1>Sell <span>More Online</span> with <span>Fatora!</span></h1>
-          <p>Trusted by over 27,000 businesses.</p>
-          <div class="email-box">
+          <h1 data-aos="fade-up">Sell <span>More Online</span> with <span>Fatora!</span></h1>
+          <p data-aos="fade-up"data-aos-delay= "200">Trusted by over 27,000 businesses.</p>
+          <div class="email-box" data-aos="fade-up" data-aos-delay="300">
             <form>
               <input type="email" placeholder="Enter your email address">
               <button type="submit" class="button start-btn">Start Now free</button>
@@ -46,15 +46,15 @@
           </div>
         </div>
         <div class="header-img">
-          <img src="./images/متجر.png" alt="#" class="">
+          <img src="./images/متجر.png" alt="#" class="" data-aos="zoom-in" data-aos-delay= "400">
         </div>
       </div>
     </div>
   </div>
   <div class="features">
     <div class="container">
-      <h1>Fatora store features</h1>
-      <div class="feature-card">
+      <h1 data-aos="fade-up">Fatora store features</h1>
+      <div class="feature-card" data-aos="fade-up">
         <div class="card-img">
           <img src="images/mini-store-icon-1.png" alt="mini-store">
         </div>
@@ -64,7 +64,7 @@
             fast,Your store is easy, fast, </p>
         </div>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" data-aos="fade-up">
         <div class="card-img">
           <img src="images/control-panel-icon-1.png" alt="mini-store">
         </div>
@@ -74,7 +74,7 @@
             fast,Your store is easy, fast, </p>
         </div>
       </div>
-      <div class="feature-card">
+      <div class="feature-card" data-aos="fade-up">
         <div class="card-img">
           <img src="images/customer-support-icon-1.png" alt="mini-store">
         </div>
@@ -89,8 +89,8 @@
 
   <div class="clients">
     <div class="container">
-      <h1>We are so proud of our clients</h1>
-      <div class="our-clients">
+      <h1 data-aos="fade-up">We are so proud of our clients</h1>
+      <div class="our-clients" data-aos="fade-up">
         <div class="client-img">
           <img src="images/ladan.png" alt="client">
         </div>
@@ -121,10 +121,15 @@
         <div class="footer-btn">
           <button type="submit" class="button start-btn">Start Now free</button>
         </div>
-
       </div>
     </div>
   </div>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+        duration: 1500,
+        once: true,
+    });
+  </script>
 </body>
-
 </html>
