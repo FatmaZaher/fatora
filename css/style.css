@@ -167,6 +167,7 @@ body {
     margin-bottom: 20px;
     border-radius: 10px;
     margin-right: 5px;
+    padding: 10px 30px
   }
   .header-img {
     width: 280px;
@@ -211,7 +212,7 @@ body {
   }
   .features .feature-card {
     width: 100%;
-    padding: 0 65px;
+    padding: 0 40px;
   }
 }
 /****************/
