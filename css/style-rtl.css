@@ -2,9 +2,11 @@ body {
   direction: rtl;
 }
 .navbar .learn-more {
-  float: left;
-  text-align: right;
+  text-align: left;
 }
 .features .feature-card {
   text-align: right;
+}
+.footer .footer-content .footer-btn {
+  text-align: left;
 }
