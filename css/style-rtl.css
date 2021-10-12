@@ -1,0 +1,10 @@
+body {
+  direction: rtl;
+}
+.navbar .learn-more {
+  float: left;
+  text-align: right;
+}
+.features .feature-card {
+  text-align: right;
+}
