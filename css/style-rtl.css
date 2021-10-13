@@ -17,7 +17,7 @@ body {
 
   direction: rtl;
 }
-.header .intro .email-box input{
+.header .intro .email-box input , .start-btn{
   font-family: "HelveticaNeueW23forSKY";
 
 }
@@ -34,8 +34,15 @@ body {
 .navbar .learn-more .language-btn {
   margin-right: 10px;
 }
+.header .intro .email-box .start-btn {
+  left: 0;
+  right: auto;
+  border-radius: 50px 0 0 50px;
+}
+
 .header .intro .email-box input {
-  margin-left: 20px;
+  padding-right: 30px;
+  padding-left: 0;
 }
 @media (max-width: 767px) {
   .header .intro .email-box input {

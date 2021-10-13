@@ -8,7 +8,9 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
     />
-    <title>Fatora Store - Create a Professional Online Store - Get Started for Free</title>
+    <title>
+      Fatora Store - Create a Professional Online Store - Get Started for Free
+    </title>
     <meta name="theme-color" content="#41979a" />
 
     <link
@@ -92,10 +94,7 @@
     />
     <meta name="twitter:site" content="@fatoraio" />
     <meta name="twitter:creator" content="@fatoraio" />
-    <meta
-      name="twitter:image"
-      content="images/cover.png"
-    />
+    <meta name="twitter:image" content="images/cover.png" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -131,16 +130,18 @@
             />
           </div>
           <div class="learn-more">
-            <div>
-              <a href="#" title="Learn more" class="button learn-btn">Learn more</a>
-              <a
-                href="index-ar.html"
-                id="ar"
-                title="عربي"
-                class="button language-btn"
-                >ع</a
-              >
-            </div>
+            <a href="#" title="Learn more" class="learn-btn">
+              <img loading="lazy" src="images/info-circle-solid.svg" alt="" />
+
+              <span>Learn more</span></a
+            >
+            <a
+              href="index-ar.html"
+              id="ar"
+              title="عربي"
+              class="button language-btn"
+              >ع</a
+            >
           </div>
         </div>
       </div>
@@ -157,10 +158,18 @@
             </p>
             <div class="email-box" data-aos="fade-up" data-aos-delay="300">
               <form>
+                <!-- <div class="input-icon">
+                  <img
+                    loading="lazy"
+                    src="images/envelope-regular.svg"
+                    alt="envelope icon"
+                  />
+                </div> -->
                 <input type="email" placeholder="Enter your email address" />
-                <a href="#" type="submit" class="button start-btn"
-                  >Start Now free</a
-                >
+                <a href="#" type="submit" class="button start-btn">
+                  <img src="images/check-solid.svg" alt="check icon" />
+                  <span>Start Now free</span>
+                </a>
               </form>
             </div>
           </div>
@@ -274,7 +283,8 @@
           </div>
           <div class="footer-btn">
             <a href="#" title="Start Now free" class="button start-btn"
-              >Start Now free</a
+              ><img src="images/check-solid.svg" alt="check icon" />
+              <span>Start Now free</span></a
             >
           </div>
         </div>
@@ -285,6 +295,18 @@
       AOS.init({
         duration: 1500,
         once: true,
+      });
+      var scrollPosition = window.scrollY;
+      var logoContainer = document.getElementsByClassName("footer")[0];
+
+      window.addEventListener("scroll", function () {
+        scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 30) {
+          logoContainer.classList.add("footer--scrolled");
+        } else {
+          logoContainer.classList.remove("footer--scrolled");
+        }
       });
     </script>
   </body>

@@ -92,10 +92,7 @@
     />
     <meta name="twitter:site" content="@fatoraio" />
     <meta name="twitter:creator" content="@fatoraio" />
-    <meta
-      name="twitter:image"
-      content="images/cover.png"
-    />
+    <meta name="twitter:image" content="images/cover.png" />
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -112,7 +109,10 @@
       }
     </script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-rtl.css" />
   </head>
@@ -129,18 +129,18 @@
             />
           </div>
           <div class="learn-more">
-            <div>
-              <a href="#" title="مشاهدة المزيد" class="button learn-btn"
-                >مشاهدة المزيد</a
-              >
-              <a
-                href="index.html"
-                id="ar"
-                type="button"
-                class="button language-btn"
-                >E</a
-              >
-            </div>
+            <a href="#" title="مشاهدة المزيد" class="learn-btn">
+              <img loading="lazy" src="images/info-circle-solid.svg" alt="" />
+
+              <span>مشاهدة المزيد</span></a
+            >
+            <a
+              href="index.html"
+              id="ar"
+              type="button"
+              class="button language-btn"
+              >E</a
+            >
           </div>
         </div>
       </div>
@@ -158,9 +158,11 @@
             <div class="email-box" data-aos="fade-up" data-aos-delay="300">
               <form>
                 <input type="email" placeholder="أدخل عنوان بريدك الالكتروني" />
-                <button href="#" type="submit" class="button btn start-btn"
-                  >ابدأ الآن مجانًا</button
-                >
+                <button href="#" type="submit" class="button btn start-btn">
+                  <img src="images/check-solid.svg" alt="check icon" />
+
+                  <span> ابدأ الآن مجانًا</span>
+                </button>
               </form>
             </div>
           </div>
@@ -271,8 +273,10 @@
             <p>متجر Fatora هو الخيار الأفضل للبيع عبر الإنترنت</p>
           </div>
           <div class="footer-btn">
-            <a href="#" title="ابدأ الآن مجانًا" class="button start-btn"
-              >ابدأ الآن مجانًا</a
+            <a href="#" title="ابدأ الآن مجانًا" class="button start-btn">
+              <img src="images/check-solid.svg" alt="check icon" />
+
+              <span>ابدأ الآن مجانًا</span></a
             >
           </div>
         </div>
@@ -280,10 +284,21 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-
       AOS.init({
         duration: 1500,
         once: true,
+      });
+      var scrollPosition = window.scrollY;
+      var logoContainer = document.getElementsByClassName("footer")[0];
+
+      window.addEventListener("scroll", function () {
+        scrollPosition = window.scrollY;
+
+        if (scrollPosition >= 30) {
+          logoContainer.classList.add("footer--scrolled");
+        } else {
+          logoContainer.classList.remove("footer--scrolled");
+        }
       });
     </script>
   </body>
