@@ -111,13 +111,6 @@
         ]
       }
     </script>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/style-rtl.css" />
   </head>
 
   <body>
@@ -292,6 +285,20 @@
 
         head.insertBefore(script, document.getElementsByTagName("script")[0]);
       }
+
+      function addCSS(filename) {
+        var head = document.getElementsByTagName("head")[0];
+
+        var style = document.createElement("link");
+        style.href = filename;
+        style.type = "text/css";
+        style.rel = "stylesheet";
+        head.appendChild(style);
+      }
+      addCSS("https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css");
+      addCSS("css/style.css");
+      addCSS("css/style-rtl.css");
+
       addScript("https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js");
       setTimeout(() => {
         AOS.init({
