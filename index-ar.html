@@ -112,7 +112,10 @@
       }
     </script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style-rtl.css" />
   </head>
@@ -158,9 +161,9 @@
             <div class="email-box" data-aos="fade-up" data-aos-delay="300">
               <form>
                 <input type="email" placeholder="أدخل عنوان بريدك الالكتروني" />
-                <button href="#" type="submit" class="button btn start-btn"
-                  >ابدأ الآن مجانًا</button
-                >
+                <button href="#" type="submit" class="button btn start-btn">
+                  ابدأ الآن مجانًا
+                </button>
               </form>
             </div>
           </div>
@@ -278,13 +281,24 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
 
-      AOS.init({
-        duration: 1500,
-        once: true,
-      });
+    <script>
+      function addScript(filename) {
+        var head = document.getElementsByTagName("head")[0];
+
+        var script = document.createElement("script");
+        script.src = filename;
+        script.type = "text/javascript";
+
+        head.insertBefore(script, document.getElementsByTagName("script")[0]);
+      }
+      addScript("https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js");
+      setTimeout(() => {
+        AOS.init({
+          duration: 1500,
+          once: true,
+        });
+      }, 500);
     </script>
   </body>
 </html>
