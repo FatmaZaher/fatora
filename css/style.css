@@ -34,6 +34,7 @@ body {
 }
 .start-btn {
   background: var(--submain-color);
+  border: none;
 }
 .start-btn:hover {
   background: #188968;
