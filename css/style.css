@@ -135,7 +135,7 @@ body {
   padding: 0 15px;
 }
 .header .intro .email-box input {
-  padding: 15px 30px;
+  padding: 9px 30px;
   border-radius: 49px;
   outline: none;
   border: none;
@@ -185,8 +185,8 @@ body {
   text-align: center;
   padding: 50px 0;
 }
-.features h1,
-.clients h1 {
+.features h2,
+.clients h2 {
   margin-bottom: 40px;
   font-size: 36px;
 }
@@ -206,8 +206,8 @@ body {
   .clients {
     padding: 30px 0;
   }
-  .features h1,
-  .clients h1 {
+  .features h2,
+  .clients h2 {
     font-size: 22px;
   }
   .features .feature-card {
@@ -227,7 +227,7 @@ body {
   width: 100%;
 }
 @media (max-width: 767px) {
-  .clients h1 {
+  .clients h2 {
     margin: 15px 0;
   }
   .clients .our-clients .client-img {
