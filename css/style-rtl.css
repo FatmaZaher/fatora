@@ -44,6 +44,15 @@ body {
   padding-right: 30px;
   padding-left: 0;
 }
+.testimonials .card {
+  text-align: right;
+}
+.testimonials .card .card-img{
+  justify-content: start;
+}
+.owl-carousel{
+  direction: ltr;
+}
 @media (max-width: 767px) {
   .header .intro .email-box input {
     margin-left: 5px;
