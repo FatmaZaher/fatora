@@ -62,7 +62,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   box-sizing: border-box;
 }
@@ -94,8 +94,6 @@ body {
   text-decoration: none;
   display: inline-flex;
   align-items: center;
-
-
 }
 
 .navbar .learn-more .learn-btn img {
@@ -139,28 +137,25 @@ body {
   }
 
   .navbar .learn-more .learn-btn {
-    padding:0;
+    padding: 0;
   }
 
- 
-  
-.navbar .learn-more .learn-btn img {
-  width: 20px;
-  margin: 0 2px;
-}
+  .navbar .learn-more .learn-btn img {
+    width: 20px;
+    margin: 0 2px;
+  }
 
-.navbar .learn-more .learn-btn span {
-  color: #fff;
-  margin: 0 2px;
-  font-size:15px
-}
-.navbar .learn-more .language-btn
-{
-  width: 35px;
-  height: 35px;
-  font-size: 18px !important;
-  border-radius: 50%;
-}
+  .navbar .learn-more .learn-btn span {
+    color: #fff;
+    margin: 0 2px;
+    font-size: 15px;
+  }
+  .navbar .learn-more .language-btn {
+    width: 35px;
+    height: 35px;
+    font-size: 18px !important;
+    border-radius: 50%;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -171,7 +166,7 @@ body {
   .navbar .logo {
     width: 40%;
   }
-  .navbar{
+  .navbar {
     margin-right: 0;
     padding-left: 0;
   }
@@ -180,9 +175,11 @@ body {
 /*******************/
 .header {
   position: relative;
-  background-image: linear-gradient(to top,
-      var(--main-color),
-      var(--linear-color));
+  background-image: linear-gradient(
+    to top,
+    var(--main-color),
+    var(--linear-color)
+  );
   padding: 140px 0 50px;
   height: 600px;
   margin-bottom: 200px;
@@ -214,7 +211,6 @@ body {
   position: relative;
   width: 100%;
   display: flex;
-
 }
 
 .header .intro .email-box input {
@@ -243,7 +239,6 @@ body {
   padding-bottom: 0;
   display: flex;
   align-items: center;
-
 }
 
 .header-img {
@@ -270,7 +265,6 @@ body {
 
   .header .intro .email-box input {
     font-size: 13px;
-
   }
 
   .header-img {
@@ -294,18 +288,18 @@ body {
 
 /*************************/
 .features,
-.clients {
+.clients,
+.testimonials {
   color: var(--submain-color);
   text-align: center;
   padding: 50px 0;
 }
-
 .features h2,
-.clients h2 {
+.clients h2,
+.testimonials h2 {
   margin-bottom: 40px;
   font-size: 36px;
 }
-
 .features .feature-card {
   width: 33%;
   display: inline-block;
@@ -314,13 +308,11 @@ body {
   box-sizing: border-box;
   color: var(--p-color);
 }
-
 .features .feature-card h3 {
   font-size: 20px;
 }
 
 @media (max-width: 767px) {
-
   .features,
   .clients {
     padding: 30px 0;
@@ -336,7 +328,70 @@ body {
     padding: 0 40px;
   }
 }
-
+/******************/
+.testimonials .card {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  text-align: left;
+  padding: 100px 20px;
+}
+.testimonials .card .card-img {
+  width: 30%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.testimonials .card .card-img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 16%);
+}
+.testimonials .card .card-body {
+  width: 70%;
+  display: flex;
+  padding: 26px;
+  background: var(--white-color);
+  box-shadow: 0 15px 30px 0 rgb(0 0 0 / 16%);
+  border-radius: 50px 5px 50px 50px;
+  box-sizing: border-box;
+}
+.testimonials .card .card-body .card-body-img {
+  width: 10%;
+  padding-top: 20px;
+}
+.testimonials .card .card-body .card-text {
+  width: 90%;
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--p-color);
+}
+.owl-theme .owl-nav,
+.owl-theme .owl-dots {
+  display: none;
+}
+@media (max-width: 767px) {
+  .testimonials .card {
+    padding: 60px 20px;
+  }
+  .testimonials .card{
+    display: block;
+  }
+  .testimonials .card .card-body{
+    order: 2;
+  }
+  .testimonials .card .card-img,
+  .testimonials .card .card-body {
+    width: 100%;
+  }
+  .testimonials .card .card-img img {
+    width: 70px;
+    height: 70px;
+  }
+}
 /****************/
 .clients .our-clients .client-img {
   width: 15%;
@@ -364,9 +419,12 @@ body {
 /************************/
 .footer {
   padding: 25px 0;
-  background-image: linear-gradient(to right,
-      var(--main-color),
-      var(--linear-color));
+  background-image: linear-gradient(
+    to right,
+    var(--main-color),
+    var(--linear-color)
+  );
+  z-index: 10;
 }
 
 .footer .footer-content {
@@ -445,7 +503,6 @@ body {
 @media (max-width: 576px) {
   .container {
     width: 100%;
-
   }
 }
 
@@ -474,7 +531,6 @@ grammarly-desktop-integration {
   padding-left: 15px;
   padding-right: 15px;
   height: 55px;
-
 }
 
 .start-btn img {
@@ -486,13 +542,13 @@ grammarly-desktop-integration {
 .start-btn span {
   margin: 0 5px;
 }
-@media (max-width: 575.98px){
+@media (max-width: 575.98px) {
   .start-btn img {
     width: 20px;
     height: 20px;
     margin: 0 2px;
   }
-  
+
   .start-btn span {
     margin: 0 2px;
   }
@@ -500,9 +556,8 @@ grammarly-desktop-integration {
     width: 60%;
     margin: 0 3px;
   }
-  .footer .footer-content .footer-btn{
+  .footer .footer-content .footer-btn {
     width: 40%;
-
   }
 }
 /* .input-icon {
