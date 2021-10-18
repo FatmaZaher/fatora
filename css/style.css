@@ -378,7 +378,7 @@ body {
     padding: 60px 20px;
   }
   .testimonials .card{
-    display: block;
+   flex-direction: column;
   }
   .testimonials .card .card-body{
     order: 2;
